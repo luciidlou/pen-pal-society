@@ -1,0 +1,21 @@
+.letters {
+    width: 75%;
+}
+.letter-header {
+    border-bottom: 1px solid slategrey;
+}
+.letter {
+    background-color: rgb(226, 233, 166);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+}
+.letter__topic {
+    background-color: rgb(83, 83, 83);
+    color: rgb(226, 233, 166);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px #888888;
+    width: fit-content;
+    padding: 5px;
+}

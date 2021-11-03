@@ -1,0 +1,22 @@
+@import "./form.css";
+@import "./letter.css";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald&family=Zen+Kurenaido&display=swap');
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-size: 14px;
+	line-height: 1.5;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+}
+h1 {
+    border-bottom: 2px solid slategrey;
+}

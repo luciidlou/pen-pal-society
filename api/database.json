@@ -1,0 +1,120 @@
+{
+    "penPals": [
+        {
+            "id": 1,
+            "firstName": "Marty",
+            "lastName": "McFly",
+            "email": "mcfly@backtothefuture.com"
+        },
+        {
+            "id": 2,
+            "firstName": "Frank",
+            "lastName": "Reynolds",
+            "email": "thewarthog@wolfcola.com"
+        },
+        {
+            "id": 3,
+            "firstName": "Michael",
+            "lastName": "Bluth",
+            "email": "nbluth@bluthcompany.com"
+        },
+        {
+            "id": 4,
+            "firstName": "Carl",
+            "lastName": "Sagan",
+            "email": "astronomyboi@carlsagan.com"
+        },
+        {
+            "id": 5,
+            "firstName": "Charlie",
+            "lastName": "Kelly",
+            "email": "kingoftherats@paddyspub.com"
+        },
+        {
+            "id": 6,
+            "firstName": "Dennis",
+            "lastName": "Reynolds",
+            "email": "fivestarman@goldengod.com"
+        }
+    ],
+    "topics": [
+        {
+            "id": 1,
+            "topic": "Business"
+        },
+        {
+            "id": 2,
+            "topic": "Family"
+        },
+        {
+            "id": 3,
+            "topic": "Friendly"
+        },
+        {
+            "id": 4,
+            "topic": "Congratulations"
+        },
+        {
+            "id": 5,
+            "topic": "Condolences"
+        }
+    ],
+    "letters": [
+        {
+            "senderId": 1,
+            "recipientId": 4,
+            "topicId": [
+                1,
+                2
+            ],
+            "message": "Doc Brown and I were able to successfully use the Delorean for time travel! We must share our newly aquired knowledge with you on the subject! Please reach out next time you are available!",
+            "date": "11/3/2021",
+            "id": 1
+        },
+        {
+            "topicId": [
+                1,
+                3
+            ],
+            "senderId": 3,
+            "recipientId": 1,
+            "message": "I need to talk to you! I have reason to believe that someone will be planning to burn down the Bluth banana stand sometime in the near future. Do you and Doc have any way for me to see into the future so I can do what I need to do to prevent it from happening? Please get back to me ASAP!",
+            "date": "11/3/2021",
+            "id": 2
+        },
+        {
+            "topicId": [
+                1
+            ],
+            "senderId": 5,
+            "recipientId": 2,
+            "message": "I'm locked out of the bar! I need to get in there so I can get an early start on bashing the rats and taking care of our rat problem. I also need to burn all of our trash so we can have that nice smokey smell in the bar and we can send all of our trash up inot the sky where it turns into stars! Please come here so you can unlock the door for me!",
+            "date": "11/3/2021",
+            "id": 3
+        },
+        {
+            "topicId": [
+                3,
+                1
+            ],
+            "senderId": 6,
+            "recipientId": 5,
+            "message": "Dude why did you leave the \"closed\" sign on while the bar was open??!! We need to really address your illiteracy problem, man. It's beginning to affect all of us. By the way, the bar is a mess right now, so the sooner you can get down here to help us out, the better. Also, stop filling up the urinals with rocks. It makes no sense.",
+            "date": "11/3/2021",
+            "id": 4
+        },
+        {
+            "topicId": [
+                4,
+                3,
+                2,
+                1
+            ],
+            "senderId": 6,
+            "recipientId": 2,
+            "message": "I heard about your recent success with the Wolf Cola ventures! Let me get in on that, man. People don't like you. You're sleezy and gross. I can be your puppet. I don't want real power. I just want the illusion of power, and money. So get back to me. I can help you out. Also, Charlie, Mac, and myself are going down to the marina today to find ourselves a P.Diddy style shrimping vessel. If you want to come check it out, meet us there around 1pm this afternoon. ",
+            "date": "11/3/2021",
+            "id": 5
+        }
+    ]
+}

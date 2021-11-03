@@ -1,0 +1,25 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+    margin: 30px 0;
+}
+.label {
+    font-size: larger;
+}
+.topic {
+    display: block;
+}
+
+#sender, #recipient {
+    width: 20%;
+}
+#messageBox {
+    height: 250px;
+    width: 70%;
+}
+
+#sendBtn {
+    display: block;
+    margin: 25px 0 5px 0;
+}
