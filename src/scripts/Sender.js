@@ -8,7 +8,7 @@ document.addEventListener("change",
         }
     })
 
-export const Author = () => {
+export const Sender = () => {
     const senders = getPenPals()
     const letterBuilder = getLetterBuilder()
 

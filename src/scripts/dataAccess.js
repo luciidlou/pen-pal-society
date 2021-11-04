@@ -92,3 +92,12 @@ export const sendLetter = () => {
     }
     applicationState.letterBuilder = { topicId: [] }
 }
+
+export const deleteLetter = (id) => {
+    return fetch(`${API}/letters/${id}`, { method: "DELETE" })
+        .then(
+            () => {
+                document.dispatchEvent(new CustomEvent("letterDeleted"))
+            }
+        )
+}

@@ -1,5 +1,5 @@
-import { Author } from "./Sender.js"
-import { Letters } from "./Letter.js"
+import { Sender } from "./Sender.js"
+import { Letters } from "./Letters.js"
 import { Message } from "./Message.js"
 import { Recipient } from "./Recipient.js"
 import { sendBtn } from "./SendBtn.js"
@@ -9,7 +9,7 @@ export const PenPal = () => {
     return `
     <h1>Pen Pal Society</h1>
     <section class="letterForm">
-        ${Author()}
+        ${Sender()}
         ${Message()}
         ${Topics()}
         ${Recipient()}

@@ -5,6 +5,8 @@
     border-bottom: 1px solid slategrey;
 }
 .letter {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(226, 233, 166);
     border-radius: 10px;
     padding: 20px;
@@ -18,5 +20,8 @@
     box-shadow: 10px 10px 8px #888888;
     width: fit-content;
     padding: 5px;
+}
+.letter__delete {
+    margin: 20px 0 0 0;
 }
 

@@ -19,4 +19,10 @@ document.addEventListener("letterSent",
         console.log(`Your letter has been sent 📤 Regenerating HTML...`)
         render()
     })
+    
+document.addEventListener("letterDeleted",
+    (event) => {
+        console.log(`Your letter has been deleted ❌ Regenerating HTML...`)
+        render()
+    })
 
