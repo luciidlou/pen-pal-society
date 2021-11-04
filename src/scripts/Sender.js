@@ -15,7 +15,7 @@ export const Author = () => {
     let html = ""
 
     html += `<div class="field">
-                <label class="label" for="sender">Sender:</label>
+                <label class="label" for="sender">Sender: <em style="font-size:12px;">(Required)</em></label>
                 <select id="sender">
                 <option value="0">Who is sending this letter?...</option>
                 `

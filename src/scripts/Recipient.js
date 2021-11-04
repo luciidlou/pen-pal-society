@@ -15,7 +15,7 @@ export const Recipient = () => {
     let html = ""
 
     html += `<div class="field">
-                <label class="label" for="recipient">Recipient:</label>
+                <label class="label" for="recipient">Recipient: <em style="font-size:12px;">(Required)</em></label>
                 <select id="recipient">
                 <option value="0">Who is recieving this letter?...</option>
                 `

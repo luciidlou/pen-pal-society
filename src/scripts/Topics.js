@@ -24,7 +24,7 @@ const buildCheckBoxes = (topic) => {
 
 export const Topics = () => {
     const topics = getTopics()
-    let html = `<label class="label topic" for="topics">Topics</label>`
+    let html = `<label class="label topic" for="topics">Topics <em style="font-size:12px;">(Requires at least one)</em></label>`
     const checkBoxes = topics.map(buildCheckBoxes)
     html += checkBoxes.join("")
     return html

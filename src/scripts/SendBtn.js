@@ -1,6 +1,5 @@
 import { getLetterBuilder, sendLetter } from "./dataAccess.js"
 
-
 document.addEventListener("click",
     (event) => {
         if (event.target.id === "sendBtn") {
