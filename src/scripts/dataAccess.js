@@ -1,12 +1,10 @@
-const mainContainer = document.querySelector("#container")
-
 // We need a place to store our data from the .json file, so we create a new object with the same key names of they keys we want to capture from the .json file
 const applicationState = {
     penPals: [],
     topics: [],
     letters: [],
     letterBuilder: {
-        topicId: []
+        topicIds: []
     }
 }
 
@@ -51,7 +49,7 @@ export const getLetterBuilder = () => {
 
 // SET FUNCTIONS
 export const setTopic = (id) => {
-    applicationState.letterBuilder.topicId.push(id)
+    applicationState.letterBuilder.topicIds.push(id)
 }
 export const setSender = (id) => {
     applicationState.letterBuilder.senderId = id
@@ -60,8 +58,13 @@ export const setRecipient = (id) => {
     applicationState.letterBuilder.recipientId = id
 }
 
+// // Can I declare a removeTopic function and use .splice on the topicIds array to remove the correct topicId?? 
+// export const removeTopic = (i, id) => {
+//     applicationState.letterBuilder.topicIds.splice(i, id)
+// }
 
-// This function performs the POST request in order to save the request object to the API (the request object we want to POST is passed in as an argument to the function)
+
+// This function performs the POST method in order to send the letter object to the API (the letter object we want to POST is passed in as an argument to the function)
 const postLetter = (letter) => {
     const fetchOptions = {
         method: "POST",
@@ -77,22 +80,31 @@ const postLetter = (letter) => {
             document.dispatchEvent(new CustomEvent("letterSent"))
         })
 }
-
+// This function is called when the user clicks the send letter button
 export const sendLetter = () => {
+    // get a copy of the letterBuilder object (transient state)
     const newLetter = { ...applicationState.letterBuilder }
+    // query the DOM for the value of the textarea element (what the user typed into the message textbox)
     const message = document.querySelector("textarea[id='messageBox']").value
+    // declare a variable that will store the date that the letter was sent
     const date = new Date()
+    // add a new key to the newLetter object, called message, that's value will be the value of our message variable we declared a few lines up
     newLetter.message = message
+    // add a new key to the newLetter object, called date, that's value will be the value of our date variable of declard a few lines up
     newLetter.date = date.toLocaleDateString("en-US")
-    if (!newLetter.senderId || !newLetter.recipientId || newLetter.topicId === [] || !newLetter.message) {
+    // IF the user has not filled out all the required fields, run a window alert to notify them
+    if (!newLetter.senderId || !newLetter.recipientId || newLetter.topicIds === [] || !newLetter.message) {
         window.alert("You have not entered all the required input")
     }
+    // ELSE (meaning we have all of the necessary user input) call the postLetter function and pass in our newly built newLetter object as the argument
     else {
         postLetter(newLetter)
     }
-    applicationState.letterBuilder = { topicId: [] }
+    // reset the transient state (letterBuilder)
+    applicationState.letterBuilder = { topicIds: [] }
 }
 
+// this function is called when the user clicks a delete button on a letter card
 export const deleteLetter = (id) => {
     return fetch(`${API}/letters/${id}`, { method: "DELETE" })
         .then(

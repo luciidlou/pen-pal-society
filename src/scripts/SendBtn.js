@@ -1,4 +1,4 @@
-import { getLetterBuilder, sendLetter } from "./dataAccess.js"
+import { sendLetter } from "./dataAccess.js"
 
 document.addEventListener("click",
     (event) => {

@@ -1,7 +1,7 @@
-import { Sender } from "./Sender.js"
+import { Senders } from "./Sender.js"
 import { Letters } from "./Letters.js"
 import { Message } from "./Message.js"
-import { Recipient } from "./Recipient.js"
+import { Recipients } from "./Recipient.js"
 import { sendBtn } from "./SendBtn.js"
 import { Topics } from "./Topics.js"
 
@@ -9,10 +9,10 @@ export const PenPal = () => {
     return `
     <h1>Pen Pal Society</h1>
     <section class="letterForm">
-        ${Sender()}
+        ${Senders()}
         ${Message()}
         ${Topics()}
-        ${Recipient()}
+        ${Recipients()}
         ${sendBtn()}
     </section>
 

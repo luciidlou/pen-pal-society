@@ -1,120 +1,116 @@
 {
-    "penPals": [
-        {
-            "id": 1,
-            "firstName": "Marty",
-            "lastName": "McFly",
-            "email": "mcfly@backtothefuture.com"
-        },
-        {
-            "id": 2,
-            "firstName": "Frank",
-            "lastName": "Reynolds",
-            "email": "thewarthog@wolfcola.com"
-        },
-        {
-            "id": 3,
-            "firstName": "Michael",
-            "lastName": "Bluth",
-            "email": "nbluth@bluthcompany.com"
-        },
-        {
-            "id": 4,
-            "firstName": "Carl",
-            "lastName": "Sagan",
-            "email": "astronomyboi@carlsagan.com"
-        },
-        {
-            "id": 5,
-            "firstName": "Charlie",
-            "lastName": "Kelly",
-            "email": "kingoftherats@paddyspub.com"
-        },
-        {
-            "id": 6,
-            "firstName": "Dennis",
-            "lastName": "Reynolds",
-            "email": "fivestarman@goldengod.com"
-        }
-    ],
-    "topics": [
-        {
-            "id": 1,
-            "topic": "Business"
-        },
-        {
-            "id": 2,
-            "topic": "Family"
-        },
-        {
-            "id": 3,
-            "topic": "Friendly"
-        },
-        {
-            "id": 4,
-            "topic": "Congratulations"
-        },
-        {
-            "id": 5,
-            "topic": "Condolences"
-        }
-    ],
-    "letters": [
-        {
-            "senderId": 1,
-            "recipientId": 4,
-            "topicId": [
-                1,
-                2
-            ],
-            "message": "Doc Brown and I were able to successfully use the Delorean for time travel! We must share our newly aquired knowledge with you on the subject! Please reach out next time you are available!",
-            "date": "11/3/2021",
-            "id": 1
-        },
-        {
-            "topicId": [
-                1,
-                3
-            ],
-            "senderId": 3,
-            "recipientId": 1,
-            "message": "I need to talk to you! I have reason to believe that someone will be planning to burn down the Bluth banana stand sometime in the near future. Do you and Doc have any way for me to see into the future so I can do what I need to do to prevent it from happening? Please get back to me ASAP!",
-            "date": "11/3/2021",
-            "id": 2
-        },
-        {
-            "topicId": [
-                1
-            ],
-            "senderId": 5,
-            "recipientId": 2,
-            "message": "I'm locked out of the bar! I need to get in there so I can get an early start on bashing the rats and taking care of our rat problem. I also need to burn all of our trash so we can have that nice smokey smell in the bar and we can send all of our trash up inot the sky where it turns into stars! Please come here so you can unlock the door for me!",
-            "date": "11/3/2021",
-            "id": 3
-        },
-        {
-            "topicId": [
-                3,
-                1
-            ],
-            "senderId": 6,
-            "recipientId": 5,
-            "message": "Dude why did you leave the \"closed\" sign on while the bar was open??!! We need to really address your illiteracy problem, man. It's beginning to affect all of us. By the way, the bar is a mess right now, so the sooner you can get down here to help us out, the better. Also, stop filling up the urinals with rocks. It makes no sense.",
-            "date": "11/3/2021",
-            "id": 4
-        },
-        {
-            "topicId": [
-                4,
-                3,
-                2,
-                1
-            ],
-            "senderId": 6,
-            "recipientId": 2,
-            "message": "I heard about your recent success with the Wolf Cola ventures! Let me get in on that, man. People don't like you. You're sleezy and gross. I can be your puppet. I don't want real power. I just want the illusion of power, and money. So get back to me. I can help you out. Also, Charlie, Mac, and myself are going down to the marina today to find ourselves a P.Diddy style shrimping vessel. If you want to come check it out, meet us there around 1pm this afternoon. ",
-            "date": "11/3/2021",
-            "id": 5
-        }
-    ]
+  "penPals": [
+    {
+      "id": 1,
+      "firstName": "Mac",
+      "lastName": "",
+      "email": "bodyguard@fightmilk.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Frank",
+      "lastName": "Reynolds",
+      "email": "thewarthog@wolfcola.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Dee",
+      "lastName": "Reynolds",
+      "email": "giantbird@invigaron.com"
+    },
+    {
+      "id": 4,
+      "firstName": "Bill",
+      "lastName": "Ponderosa",
+      "email": "pondysthecoolest@gmail.com"
+    },
+    {
+      "id": 5,
+      "firstName": "Charlie",
+      "lastName": "Kelly",
+      "email": "kingoftherats@paddyspub.com"
+    },
+    {
+      "id": 6,
+      "firstName": "Dennis",
+      "lastName": "Reynolds",
+      "email": "fivestarman@goldengod.com"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "topic": "Business"
+    },
+    {
+      "id": 2,
+      "topic": "Family"
+    },
+    {
+      "id": 3,
+      "topic": "Friendly"
+    },
+    {
+      "id": 4,
+      "topic": "Congratulations"
+    },
+    {
+      "id": 5,
+      "topic": "Condolences"
+    }
+  ],
+  "letters": [
+    {
+      "topicIds": [
+        4
+      ],
+      "senderId": 1,
+      "recipientId": 5,
+      "message": "I got my Magnum condoms; I got my wad of hundreds. I'm ready to plow. I'm not fat. I'm cultivating mass. Fight Milk! The first alcoholic dairy based protein drink for bodyguards! 'Cause if the girl said \"no\", then the answer obviously is \"no.\" But the thing is, is she's not gonna say \"no.\" She would never say \"no\", because of the implication. Yippie-kay-yay, Mr. Falcon! RUM HAM! RUM HAM! I'm sorry rum ham! I'm sorry... What is this word, spa? I feel like you're starting to a say a word and you're not finishing it. Are you trying to say spaghetti? Are you taking me for a spaghetti day?\n",
+      "date": "11/4/2021",
+      "id": 1
+    },
+    {
+      "topicIds": [
+        2
+      ],
+      "senderId": 5,
+      "recipientId": 6,
+      "message": "Is your cat making TOO MUCH NOISE ALL THE TIME? Yippie-kay-yay, Mr. Falcon! This is Ham... *soaked* in Rum. It's loaded with booze. Oh, get a job? Just get a job? Why don't I strap on my job helmet and squeeze down into a job cannon and fire off into job land, where jobs grow on jobbies?! What is this word, spa? I feel like you're starting to a say a word and you're not finishing it. Are you trying to say spaghetti? Are you taking me for a spaghetti day? I will eat your babies, bitch! Dennis, if I was looking for safe I wouldn't be sticking my dick through a wall.\n",
+      "date": "11/4/2021",
+      "id": 2
+    },
+    {
+      "topicIds": [
+        5,
+        1
+      ],
+      "senderId": 4,
+      "recipientId": 1,
+      "message": "Can I stop you, though? You keep using this word \"jabroni.\" And...it's awesome! I will eat your babies, bitch! I've got a confession: I'm in love with a man. \"What?\" I'm in love with a man. A man called God. Does that make me gay? Am I \"gay for God\"? You betcha. Can I stop you, though? You keep using this word \"jabroni.\" And...it's awesome! 'Cause if the girl said \"no\", then the answer obviously is \"no.\" But the thing is, is she's not gonna say \"no.\" She would never say \"no\", because of the implication. Then, I'll just regress, because I feel I made myself perfectly redundant. I'm not fat. I'm cultivating mass.\n",
+      "date": "11/4/2021",
+      "id": 3
+    },
+    {
+      "topicIds": [
+        3,
+        2
+      ],
+      "senderId": 1,
+      "recipientId": 5,
+      "message": "Smoke some cigarettes. The smoke will suffocate the bacteria in your stomach. Dayman, fighter of the Nightman, champion of the sun, you're a master of karate and friendship for everyone. I will eat your babies, bitch! Cat in the wall, eh?! Okay, now you're talking my language. This is Ham... *soaked* in Rum. It's loaded with booze. Later, dudes. S you in your A's, don't wear a C and J all over your B's. You gotta pay the troll toll, if you wanna get into that boy's soul.\n",
+      "date": "11/4/2021",
+      "id": 4
+    },
+    {
+      "topicIds": [
+        1
+      ],
+      "senderId": 2,
+      "recipientId": 6,
+      "message": "Flip, Flip, Flipadelphia! Dayman, fighter of the Nightman, champion of the sun, you're a master of karate and friendship for everyone. I will SMASH your face into a- into a jelly! Isn't that amazing? You ask to see a woman's breasts on the street, you get slapped. You give her a free t-shirt and videotape it, and the clothes come right off. Grain alcohol, baby! Whenever there's a potential riot, I'm getting blasted on grain alcohol. Later, dudes. S you in your A's, don't wear a C and J all over your B's. Don't put regular steak, put milk-steak, she'll know what it is.\n",
+      "date": "11/4/2021",
+      "id": 5
+    }
+  ]
 }

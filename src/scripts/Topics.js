@@ -12,9 +12,25 @@ document.addEventListener("change",
         }
     })
 
+// // Need to find a way to listen for a checkbox to go from "checked" to "unchecked"
+// document.addEventListener("change",
+//     (event) => {
+//         const letterBuilder = getLetterBuilder()
+//         const topicIds = letterBuilder.topicIds
+//         if (event.target.name === "topic") {
+//             const topicId = parseInt(event.target.value)
+//             if (letterBuilder.topicIds.includes(topicId)) {
+//                 for (let i = 0; i < topicIds.length; i++) {
+//                     if (topicIds[i] === topicId)
+//                         removeTopic(i, topicId)
+//                 }
+//             }
+//         }
+//     })
+
 const buildCheckBoxes = (topic) => {
     const letterBuilder = getLetterBuilder()
-    if (letterBuilder.topicId.includes(topic.id)) {
+    if (letterBuilder.topicIds.includes(topic.id)) {
         return `<input type="checkbox" name="topic" value="${topic.id}" checked /> ${topic.topic}`
     }
     else {

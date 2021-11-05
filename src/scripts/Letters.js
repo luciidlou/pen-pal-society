@@ -12,7 +12,7 @@ const buildLetter = (letter) => {
         return sender.id === letter.senderId
     })
     const foundTopics = topics.filter(topic => {
-        return letter.topicId.includes(topic.id)
+        return letter.topicIds.includes(topic.id)
     })
     const generateTopics = () => {
         let topics = []
